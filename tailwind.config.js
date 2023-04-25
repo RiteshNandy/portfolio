@@ -22,6 +22,7 @@ module.exports = {
         'light_gray': {
           DEFAULT: '#D3D3D3',
         },
+        beige: '#F5F5DC'
       },
     },
   },
