@@ -2,10 +2,17 @@ import {AiFillGithub,AiFillLinkedin,AiOutlineMail,AiFillPhone,AiOutlineDownload}
 import {GoLocation} from 'react-icons/go'
 import {GiTie} from 'react-icons/gi'
 import {SiTableau} from 'react-icons/si'
-
+import { useTheme } from 'next-themes'
 import React from 'react';
 
 const Sidebar = () => {
+
+    const {theme, setTheme} = useTheme();
+
+    const changeTheme =()=>{
+        setTheme(theme==="light"?"dark":"light")
+    }
+
   return (
     <div>
         <img 
@@ -20,12 +27,12 @@ const Sidebar = () => {
             <span className="font-bold">Nandy</span>
         </h3>
 
-        <p className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full'>            
+        <p className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-300'>            
             <GiTie className="w-6 h-6" />
             Business Analyst
         </p>
 
-        <a className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full' href='zdfsa' download=''>
+        <a className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-300' href='zdfsa' download=''>
             <AiOutlineDownload className="w-6 h-6" />
             Download Resume
         </a>
@@ -47,7 +54,7 @@ const Sidebar = () => {
         </div>
 
         {/* Contact Details*/}
-        <div className='py-4 my-5 bg-gray-200'
+        <div className='py-4 my-5 bg-gray-200 dark:bg-dark-300'
             style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
             <div className='flex items-center justify-center space-x-2'>
                 <GoLocation />
@@ -78,7 +85,7 @@ const Sidebar = () => {
         </button>
 
         {/*Toggle Button*/}
-        <button className='w-8/12 px-5 py-2 my-2 font-bold text-black rounded-full bg-gradient-to-r from-orange-500 to-yellow-300 focus:outline-none'>
+        <button onClick={changeTheme} className='w-8/12 px-5 py-2 my-2 font-bold text-black rounded-full bg-gradient-to-r from-orange-500 to-yellow-300 focus:outline-none'>
             Toggle Theme
         </button>
 

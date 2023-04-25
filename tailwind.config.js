@@ -5,9 +5,14 @@ module.exports = {
     './components/**/*.tsx',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: { 
     fontFamily: {
       'Montserrat': ['Montserrat'],
+    },
+    boxShadow:{
+        'custom-light': " 0 0 10px #313131",
+        'custom-dark': "5px 5px 10px #0a0c0e, -5px -5px 10px #14161c",
     },
     extend: {
       backgroundImage: {
@@ -22,9 +27,22 @@ module.exports = {
         'light_gray': {
           DEFAULT: '#D3D3D3',
         },
-        beige: '#F5F5DC'
+        beige: '#F5F5DC',
+        dark:{
+          DEFAULT: '#010101',
+          100: '#0a0b1e',
+          200: '#16181d',
+          300: '#16181d',
+          500: '#0f1115',
+          700: '#202125',
+        }
       },
     },
   },
   plugins: [],
+  variants: {
+    extend:{
+      boxShadow:["dark"]
+    },
+  }
 }

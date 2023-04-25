@@ -1,8 +1,8 @@
 
 import { SiMicrosoftazure } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
-import {DiGoogleAnalytics, DiReact} from 'react-icons/di'
-import {FaServer, FaPython} from 'react-icons/fa'
+import {DiGoogleAnalytics} from 'react-icons/di'
+import {FaServer} from 'react-icons/fa'
 import { BsCircleFill } from "react-icons/bs";
 import { Iservice, ISkill } from './type'
 
@@ -11,15 +11,8 @@ export const services:Iservice[] = [
 
     {
         Icon: DiGoogleAnalytics,
-        title: "Business Analyst",
-        about: "skilled in <b>SQL, Excel (Macros) and Tableau</b>"
-
-    },
-
-    {
-        Icon: FaPython,
-        title: "Data Analyst",
-        about: "Skilled in <b>Python, SQL, Oracle, Hadoop</b>"
+        title: "Data/Business Analyst",
+        about: "skilled in <b>SQL, Oracle, Excel (Macros), Python, Hadoop and Tableau</b>"
 
     },
 
@@ -40,12 +33,6 @@ export const services:Iservice[] = [
         Icon: FaServer,
         title: "DevOps Engineer",
         about: "skilled in <b>Jenkins,Docker,Git, Terraform, Kubernetes, AKS</b>"        
-    },
-
-    {
-        Icon: DiReact,
-        title: "frontend Dev",
-        about: "Skilled in <b>REACT, TS, JS, tailwindcss, HTML and CSS</b>"
     }
 
 ]

@@ -40,7 +40,7 @@ useEffect(() => {
       <span className='text-xl font-bold text-orange-500 border-b-4 border-orange-500 md:text-2xl'>
         {activeItem}
       </span>
-      <div className='flex space-x-5 font-bold text-md text-custom_gray'>
+      <div className='flex space-x-5 font-bold text-md text-custom_gray dark:text-white'>
 
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/'/> 
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects'/> 
