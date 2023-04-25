@@ -3,7 +3,8 @@ import { SiMicrosoftazure } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 import {DiGoogleAnalytics, DiReact} from 'react-icons/di'
 import {FaServer, FaPython} from 'react-icons/fa'
-import { Iservice } from './type'
+import { BsCircleFill } from "react-icons/bs";
+import { Iservice, ISkill } from './type'
 
 
 export const services:Iservice[] = [
@@ -45,6 +46,59 @@ export const services:Iservice[] = [
         Icon: DiReact,
         title: "frontend Dev",
         about: "Skilled in <b>REACT, TS, JS, tailwindcss, HTML and CSS</b>"
+    }
+
+]
+
+export const languages:ISkill[] = [
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'70%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'60%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'85%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'90%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'95%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Python',
+        level:'80%'        
+    }
+
+]
+
+export const tools:ISkill[] = [
+    {
+        Icon: BsCircleFill,
+        name:'Jenkins',
+        level:'70%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Kubernetes',
+        level:'60%'        
+    },
+    {
+        Icon: BsCircleFill,
+        name:'Terraform',
+        level:'85%'        
     }
 
 ]

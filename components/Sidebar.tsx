@@ -14,10 +14,10 @@ const Sidebar = () => {
             className='w-32 h-32 mx-auto rounded-full '    
         /> 
         <h3 className='mt-4 space-x-2 text-3xl font-medium font-bold letter-spacing-wide font-Pacifico'>
-            <span className='mr-2 space-x-2'>
+            <span className='mr-2 space-x-2 font-extrabold text-orange-500'>
                 Ritesh  
-            </span>
-            Nandy
+            </span >
+            <span className="font-bold">Nandy</span>
         </h3>
 
         <p className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full'>            
