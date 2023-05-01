@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div>
         <img 
-            src='../../public/LinkedinPic.png' 
+            src='LinkedinPic2.png' 
             alt="My Image" 
             className='w-32 h-32 mx-auto rounded-full '    
         /> 

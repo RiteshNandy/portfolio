@@ -33,7 +33,7 @@ const resume = () => {
 
 
         <div>
-          <h5 className='my-3 text-2xl font-bold text-white'>
+          <h5 className='my-3 text-2xl font-bold text-white dark:text-black'>
           Education
           </h5>
           <div>
